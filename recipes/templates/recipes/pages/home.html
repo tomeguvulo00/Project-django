@@ -1,33 +1,16 @@
 {% include 'recipes/partials/head.html' %}
 
 <body>
+    {% include 'recipes/partials/header.html' %}
+    {% include 'recipes/partials/search.html' %}
 
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fas fa-utensils  main-logo-icon"></i>
-                    <span> Recipes </span>
-                </a>
-            </h1>
-        </div>
-    </header>
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {%  include "recipes/partials/grid.html" %}
+            
+    </main>
 
-    <div class="seacher-container">
-
-        <div class="content">
-
-            <form action="">
-                <input type="search" class="search-ipunt" nome="search">
-                <button>pesquisar</button>
-            </form>
-        </div>
-    </div>
-
-
-
-
-
+    {%include "recipes/partials/footer.html"%}
 
 
 </body>
